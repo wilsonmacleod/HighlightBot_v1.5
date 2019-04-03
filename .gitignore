@@ -1,2 +1,4 @@
 creds.py
 test_creds.py
+/__pycache__/
+*.txt
