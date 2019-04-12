@@ -40,9 +40,10 @@ def get_vids(sub_folder, content):
     """download highlights into daily folder per our reddit findings"""
     
     for title, link in tqdm(content): #go through tuple each sublink, download and save to our new directory under reddit title
+    
         try:
             
-            url = (f'https://streamja.com/{link}')
+            url = (f'https://cdnja.r.worldssl.net/mp4/r7/{link}.mp4')
             r= request.get(url, stream = True)
         
             with open(os.path.join(sub_folder, f'{title[0:250]}.mp4'), 'wb') as f:

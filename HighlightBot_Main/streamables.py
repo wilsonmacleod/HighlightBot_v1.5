@@ -59,5 +59,3 @@ def get_vids(sub_folder, content):
 
         except FileNotFoundError: #video source has been taken down but reddit post still exists
             print('FileNotFoundError-Video has been taken down')
-        except: #catch 'InvalidUrl' requests error that is very rarely raised
-            url_str = ('http://'+url_str)
